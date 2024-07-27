@@ -1,1 +1,2 @@
-export * from './Stopwatch'
+export * from './Stopwatch';
+export * from './WeatherApp';

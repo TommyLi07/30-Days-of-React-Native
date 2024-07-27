@@ -1,4 +1,4 @@
-import { days } from '@/constants';
+import { days } from '@/configs';
 import FontAwesomeIcon from '@expo/vector-icons/FontAwesome';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router } from 'expo-router';
@@ -27,11 +27,11 @@ export default function Index() {
 				>
 					<Image
 						style={styles.image}
-						source={require('@/assets/images/day1.png')}
+						source={require('@/assets/images/home/home1.png')}
 					></Image>
 					<Image
 						style={styles.image}
-						source={require('@/assets/images/day2.png')}
+						source={require('@/assets/images/home/home2.png')}
 					></Image>
 				</Swiper>
 			)}

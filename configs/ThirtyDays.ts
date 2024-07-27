@@ -11,7 +11,7 @@ export const days = [
 	},
 	{
 		key: 1,
-		title: 'A weather app',
+		title: 'Weather App',
 		route: 'day2',
 		isFAIcon: false,
 		icon: 'partly-sunny',
