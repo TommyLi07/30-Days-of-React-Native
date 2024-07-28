@@ -8,7 +8,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Swiper from 'react-native-swiper';
 
 const day2 = memo(() => {
-	const item = useLocalSearchParams();
+	const { title } = useLocalSearchParams<{ title?: string }>();
 
 	const { bottom } = useSafeAreaInsets();
 
@@ -16,7 +16,7 @@ const day2 = memo(() => {
 		<View style={styles.container}>
 			<Stack.Screen
 				options={{
-					title: item.title as string,
+					title,
 				}}
 			/>
 

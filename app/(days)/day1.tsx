@@ -9,7 +9,7 @@ import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 const Day1 = memo(() => {
-	const item = useLocalSearchParams();
+	const { title } = useLocalSearchParams<{ title?: string }>();
 
 	const [isRunning, setIsRunning] = useState(false);
 	const [sectionTime, setSectionTime] = useState(0);
@@ -61,7 +61,7 @@ const Day1 = memo(() => {
 		<View style={styles.container}>
 			<Stack.Screen
 				options={{
-					title: item.title as string,
+					title,
 				}}
 			/>
 

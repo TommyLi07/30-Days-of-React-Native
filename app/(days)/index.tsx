@@ -45,8 +45,8 @@ export default function Index() {
 					]}
 					onPress={() => {
 						router.push({
-							pathname: `/${item.route}`,
-							params: item,
+              pathname: `/${item.route}`,
+              params: {title: item.title},
 						});
 					}}
 				>
